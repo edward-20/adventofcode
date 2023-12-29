@@ -35,7 +35,7 @@ followInstructions :: Int -> Node -> String -> [Node] -> IO Int
 followInstructions acc curr "" nodes = return acc
 followInstructions acc curr (x:xs) nodes = do
         let new = if x == 'L' then leff curr else righ curr
-        print $ show x ++ new
+        -- print $ show x ++ new
         let newNode = head $ dropWhile (\n -> (name n) /= new) nodes
         if new == "ZZZ" then do return (acc + 1) else
                 followInstructions (acc + 1) newNode xs nodes
@@ -57,5 +57,5 @@ main = do
         
         let nodes = map (line2Node) $ drop 2 inp
         let start = head $ dropWhile (\n -> name n /= "AAA") nodes
-        ans <- followInstructions 0 start inst (cycle nodes)
+        ans <- followInstructions 0 start (cycle inst) nodes
         print ans
