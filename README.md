@@ -13,7 +13,7 @@ on ways to improve (I probably won't).
 5:xx
 6:xx
 7:
-8:
+8:x
 9:
 10: 
 11:
@@ -36,4 +36,5 @@ on ways to improve (I probably won't).
 Procedural:
 * go
 
-
+Functional: 
+* haskell
