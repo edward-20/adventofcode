@@ -6,14 +6,14 @@ build system. It's simply the code I used to get the answers I wanted. Sometimes
 on ways to improve (I probably won't).
 
 ## Progress:
-1: 
+1:x
 2:xx
 3:xx
 4:x
 5:xx
 6:xx
 7:
-8:x
+8:xx
 9:
 10: 
 11:
@@ -35,6 +35,8 @@ on ways to improve (I probably won't).
 ## Imperative
 Procedural:
 * go
+* python
+* shell
 
-Functional: 
+## Functional: 
 * haskell
