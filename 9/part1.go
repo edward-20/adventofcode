@@ -62,7 +62,7 @@ func getNextNumber(numbers []int) int {
 	return numbers[len(numbers)-1] + result
 }
 
-func main() {
+func part1() {
 	file, err := os.Open("input.txt")
 	defer file.Close()
 
